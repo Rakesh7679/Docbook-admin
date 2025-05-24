@@ -8,7 +8,8 @@ import { DoctorContext } from '../context/DoctorContext'
 const Login = () => {
 
     const [state, setState] = useState('Admin')
-    const [email, setEmail] = useState('')import React, { useContext, useState } from 'react';
+    const [email, setEmail] = useState('');
+        import React, { useContext, useState } from 'react';
 import { assets } from '../assets/assets';
 import { AdminContext } from '../context/AdminContext';
 import axios from 'axios';
