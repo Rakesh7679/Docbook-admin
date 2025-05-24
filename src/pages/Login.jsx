@@ -32,7 +32,9 @@ const Login = () => {
           localStorage.removeItem('aToken'); // Doctor login par admin token hatao
           const { data } = await axios.post(backendUrl+'/api/doctor/login', {
             email, password
-          })
+          },
+          { withCredentials: true }
+        )
           if(data.success){
             localStorage.setItem('dToken', data.token)
             setDToken(data.token)
